@@ -3,88 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GAMBIT Brand Book</title>
+  <title>Gambit Brand Book</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="brand-page">
-    <section class="cover" id="page-01">
-      <div class="ambient ambient-blue"></div>
-      <div class="ambient ambient-white"></div>
-      <div class="grid-layer"></div>
+  <div class="grain"></div>
+  <nav class="brand-nav">
+    <a href="/" class="brand-logo">GAMBIT</a>
+    <div class="nav-meta">Brand Book / Sprint 1</div>
+  </nav>
 
-      <nav class="topbar">
-        <div class="wordmark">GAMBIT</div>
-        <div class="meta">BRAND BOOK / PAGE 01</div>
-      </nav>
-
-      <div class="cover-content">
-        <div class="copy-block">
-          <div class="eyebrow">PROACTIVE SPORTS INTELLIGENCE</div>
-          <h1>
-            우리는 데이터를<br />
-            제공하지 않습니다.<br />
-            <span>의사결정을 제공합니다.</span>
-          </h1>
-          <p class="lead">
-            Gambit은 스포츠 데이터를 AI가 먼저 해석하고, 필요한 순간에 필요한 인사이트를 제안하는 능동형 스포츠 인텔리전스 플랫폼입니다.
-          </p>
-          <div class="cover-actions">
-            <a class="button primary" href="/">홈페이지 보기</a>
-            <a class="button ghost" href="#page-01">Brand Book v0.1</a>
-          </div>
-        </div>
-
-        <div class="visual-stage" aria-label="AI sports intelligence interface preview">
-          <div class="orbital-ring ring-one"></div>
-          <div class="orbital-ring ring-two"></div>
-
-          <article class="ai-panel main-panel">
-            <div class="panel-header">
-              <span class="dot live"></span>
-              <span>GAMBIT INTELLIGENCE</span>
-            </div>
-            <div class="metric-row">
-              <div>
-                <small>상대 패턴</small>
-                <strong>초구 슬라이더</strong>
-              </div>
-              <div class="metric-value">42%</div>
-            </div>
-            <div class="signal-line"><span style="width:72%"></span></div>
-            <p class="panel-text">우타자에게 초구 변화구 비중이 증가했습니다. 존 안쪽 슬라이더는 적극적인 공격 구간입니다.</p>
-          </article>
-
-          <article class="ai-panel small-panel panel-a">
-            <small>Decision Signal</small>
-            <strong>Attack Early</strong>
-            <span class="badge">Confidence 91%</span>
-          </article>
-
-          <article class="ai-panel small-panel panel-b">
-            <small>Player Intelligence</small>
-            <strong>Slider Approach</strong>
-            <span class="positive">Top 10%</span>
-          </article>
-
-          <div class="athlete-wireframe">
-            <div class="head"></div>
-            <div class="body-line"></div>
-            <div class="arm arm-left"></div>
-            <div class="arm arm-right"></div>
-            <div class="leg leg-left"></div>
-            <div class="leg leg-right"></div>
-            <div class="bat"></div>
-          </div>
-        </div>
+  <main>
+    <section class="page page-cover" id="cover">
+      <div class="cover-copy reveal">
+        <p class="eyebrow">Proactive Sports Intelligence</p>
+        <h1>GAMBIT</h1>
+        <p class="headline">스포츠는 더 많은 데이터가 아니라,<br />더 나은 의사결정을 필요로 합니다.</p>
+        <p class="subcopy">Gambit은 스포츠 데이터를 AI가 먼저 읽고, 해석하고, 필요한 순간에 실행 가능한 인사이트로 제안하는 능동형 스포츠 인텔리전스 플랫폼입니다.</p>
       </div>
 
-      <footer class="footer-line">
-        <span>Data → Intelligence → Decision → Action</span>
-        <span>gambit-platform.vercel.app</span>
-      </footer>
+      <div class="cover-system reveal delay-1">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="insight-card primary-card">
+          <span class="label">AI Insight</span>
+          <h3>Pitcher fatigue detected</h3>
+          <div class="metric-row"><span>Fastball velocity</span><strong>↓ 1.8 mph</strong></div>
+          <div class="metric-row"><span>Slider usage</span><strong>+21%</strong></div>
+          <div class="recommendation">Recommendation<br /><b>Attack early in the count.</b></div>
+        </div>
+        <div class="mini-card card-a">Swing Decision<br /><b>Elite</b></div>
+        <div class="mini-card card-b">Expected Damage<br /><b>+0.31</b></div>
+        <div class="field-grid"></div>
+      </div>
+    </section>
+
+    <section class="page page-why" id="why">
+      <div class="section-number">02</div>
+      <div class="split-layout">
+        <div class="reveal">
+          <p class="eyebrow">Why Gambit</p>
+          <h2>데이터는 넘치지만,<br />결정은 여전히 어렵습니다.</h2>
+        </div>
+        <div class="why-stack reveal delay-1">
+          <p>현재 스포츠 현장은 수많은 지표, 영상, 리포트, 대시보드를 갖고 있습니다.</p>
+          <p>하지만 경기 중 필요한 것은 더 많은 숫자가 아니라, 지금 무엇을 해야 하는지에 대한 명확한 판단입니다.</p>
+          <p class="strong">Gambit은 사용자가 찾기 전에 AI가 먼저 신호를 발견하고, 해석하고, 제안합니다.</p>
+        </div>
+      </div>
+      <div class="principles reveal delay-2">
+        <div><span>01</span><b>Less Searching</b><p>정보를 찾는 시간을 줄입니다.</p></div>
+        <div><span>02</span><b>More Understanding</b><p>맥락을 이해할 수 있게 합니다.</p></div>
+        <div><span>03</span><b>Better Decisions</b><p>행동으로 이어지는 결정을 만듭니다.</p></div>
+      </div>
+    </section>
+
+    <section class="page page-shift" id="shift">
+      <div class="section-number">03</div>
+      <p class="eyebrow reveal">The Shift</p>
+      <h2 class="center-title reveal">From dashboards to decisions.</h2>
+      <div class="shift-grid">
+        <div class="shift-panel today reveal delay-1">
+          <div class="panel-kicker">Today</div>
+          <h3>Reactive</h3>
+          <ul class="flow">
+            <li>Sports Data</li>
+            <li>Dashboards</li>
+            <li>Manual Analysis</li>
+            <li>Human Decision</li>
+          </ul>
+          <p>팀은 답을 찾기 위해 데이터를 뒤집니다. 그러나 기회는 기다려주지 않습니다.</p>
+        </div>
+        <div class="shift-arrow reveal delay-2">→</div>
+        <div class="shift-panel tomorrow reveal delay-3">
+          <div class="panel-kicker">Tomorrow</div>
+          <h3>Proactive</h3>
+          <ul class="flow active-flow">
+            <li>Sports Data</li>
+            <li>AI Intelligence</li>
+            <li>Recommendation</li>
+            <li>Immediate Action</li>
+          </ul>
+          <p>AI가 맥락을 이해하고, 중요한 신호를 우선순위화하며, 다음 결정을 먼저 전달합니다.</p>
+        </div>
+      </div>
+      <div class="closing-line reveal delay-3">Sports don't need more data. They need better decisions.</div>
     </section>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
