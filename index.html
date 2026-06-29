@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gambit — Proactive Sports Intelligence</title>
+  <meta name="description" content="Gambit transforms sports data into proactive intelligence for teams, players, organizations, and fans." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Gambit Home">
+      <span class="brand-mark">G</span>
+      <span>GAMBIT</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#platform">Platform</a>
+      <a href="#demo">Live Demo</a>
+      <a href="#insights">Insights</a>
+      <a href="#contact">Company</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Request Demo</a>
+  </header>
+
+  <main id="top">
+    <section class="landing section">
+      <div class="landing-copy reveal">
+        <p class="eyebrow">Sports Intelligence Platform</p>
+        <h1>Proactive Sports Intelligence.</h1>
+        <p class="lead">Gambit transforms sports data into AI-generated insights before users even know what to ask.</p>
+        <div class="actions">
+          <a class="button primary" href="#demo">Try Live Demo</a>
+          <a class="button secondary" href="#platform">Explore Platform</a>
+        </div>
+      </div>
+      <div class="intelligence-stage reveal delay-1" aria-label="AI insight preview">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <article class="insight-card main-card">
+          <div class="card-topline"><span class="pulse"></span> Live Intelligence</div>
+          <h2>Pitcher fatigue detected.</h2>
+          <div class="metric-row"><span>Fastball Velocity</span><strong>↓ 1.8 mph</strong></div>
+          <div class="metric-row"><span>Slider Usage Forecast</span><strong>+21%</strong></div>
+          <div class="recommendation">Recommendation: Attack early in the count.</div>
+        </article>
+        <article class="mini-card mini-one">
+          <span>Decision Signal</span>
+          <strong>High Leverage</strong>
+        </article>
+        <article class="mini-card mini-two">
+          <span>Player Matchup</span>
+          <strong>Advantage +0.34</strong>
+        </article>
+      </div>
+    </section>
+
+    <section id="demo" class="section demo-section reveal">
+      <div class="section-heading centered">
+        <p class="eyebrow">Live Intelligence Demo</p>
+        <h2>Ask sports data in natural language.</h2>
+        <p>Search less. Understand faster. Let intelligence surface the signal.</p>
+      </div>
+      <div class="demo-console">
+        <div class="console-header">
+          <span></span><span></span><span></span>
+          <p>Ask Gambit</p>
+        </div>
+        <div class="query-wrap">
+          <input id="queryInput" type="text" value="Which hitters are struggling against sliders recently?" aria-label="Ask Gambit a sports intelligence question" />
+          <button id="askButton">Generate Insight</button>
+        </div>
+        <div class="sample-queries" aria-label="Sample queries">
+          <button data-query="Which hitters are struggling against sliders recently?">Slider weakness</button>
+          <button data-query="Which pitcher is losing command in late innings?">Late-inning command</button>
+          <button data-query="Find undervalued players with improving contact quality.">Scouting signal</button>
+        </div>
+        <div id="analysisStatus" class="analysis-status" hidden>
+          <span class="loader"></span>
+          <span id="statusText">Analyzing game data...</span>
+        </div>
+        <article id="resultCard" class="result-card">
+          <p class="eyebrow">Gambit Insight</p>
+          <h3>Three hitters show a sharp decline against breaking balls over the last 14 days.</h3>
+          <div class="signal-grid">
+            <div><span>Whiff Rate</span><strong>+18%</strong></div>
+            <div><span>Chase Rate</span><strong>+11%</strong></div>
+            <div><span>Hard Contact</span><strong>−9%</strong></div>
+          </div>
+          <p class="result-text">Recommended action: Review first-pitch breaking ball approach and prioritize zone recognition work before the next series.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="platform" class="section platform-section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Platform Overview</p>
+        <h2>From sports data to better decisions.</h2>
+        <p>Gambit connects game signals, player context, and AI-generated recommendations into one proactive intelligence layer.</p>
+      </div>
+      <div class="flow">
+        <div>Sports Data</div><span>→</span><div>Intelligence Engine</div><span>→</span><div>AI Insights</div><span>→</span><div>Better Decisions</div>
+      </div>
+      <div class="platform-grid">
+        <article><h3>Game Intelligence</h3><p>Detect momentum, matchup shifts, fatigue, and decision points during competition.</p></article>
+        <article><h3>Player Intelligence</h3><p>Translate performance signals into coaching feedback and development priorities.</p></article>
+        <article><h3>Team Intelligence</h3><p>Support scouting, roster planning, opponent preparation, and front-office strategy.</p></article>
+        <article><h3>Fan Intelligence</h3><p>Create smarter viewing experiences through context, predictions, and narrative insights.</p></article>
+      </div>
+    </section>
+
+    <section id="insights" class="section insights-section reveal">
+      <div class="section-heading centered">
+        <p class="eyebrow">Knowledge Hub</p>
+        <h2>Building the language of sports intelligence.</h2>
+      </div>
+      <div class="insight-grid">
+        <article><span>01</span><h3>Decision Intelligence</h3><p>How sports organizations move from data access to decision advantage.</p></article>
+        <article><span>02</span><h3>Computer Vision</h3><p>Tracking movement, posture, pitch shape, and tactical patterns at scale.</p></article>
+        <article><span>03</span><h3>Swing Decision</h3><p>Measuring not just whether a player swings, but whether the decision was right.</p></article>
+        <article><span>04</span><h3>Player Development</h3><p>Turning feedback into repeatable practice and long-term performance growth.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section reveal">
+      <p class="eyebrow">Gambit v0.1</p>
+      <h2>Ready to build proactive sports intelligence?</h2>
+      <p>This is an early concept page for partners, teams, and builders shaping the next generation of sports AI.</p>
+      <a class="button primary" href="mailto:hello@gambit.ai">Request Demo</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>GAMBIT</span>
+    <p>Proactive Sports Intelligence Platform</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
